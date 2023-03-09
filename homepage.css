@@ -1,1 +1,149 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+}
+
+body{
+
+    
+    background-color: rgb(28,28,28);
+    margin: 0%;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main" 
+    "footer";
+    grid-template-rows: 20vh 10vh 1fr 5vh;
+    
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main{   
+    grid-area: main;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer{
+   
+    grid-area: footer;
+}
+
+
+
+
+.titulo{
+    font-size: 35px;
+}
+
+.sobre{
+    color:  grey;
+    background-color: rgba(0, 0,0,0);
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    transition: transform 0..2s ease-in-out;
+
+}
+.sobre:hover{
+    color: white;
+    transform: scale( 1.2);
+    transform-origin: center center ;
+}
+.sobre:active{
+    background-color: rgba(0, 0,0,0);
+    transform: translateY(1px);
+    
+
+}
+
+.reserva{
+    background-color: rgba(0, 0,0,0);
+    border: solid grey 1px;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+}
+.reserva:hover{
+    color: white;
+    transform: scale(1.2);
+}
+.reserva:active{
+    background-color: rgba(0, 0,0,0);
+    transform: translateY(1px);
+}
+
+.pedidos{
+    background-color: rgba(0, 0,0,0);
+    border: solid grey 1px;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.pedidos:hover{
+    color: white;
+    transform: scale(1.2);
+}
+.pedidos:active{
+    background-color: rgba(0, 0,0,0);
+    transform: translateY(1px);
+}
+
+.cardapio{
+
+    background-color: rgba(0, 0,0,0);
+    border: solid grey 1px;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    
+}
+.cardapio:hover{
+    color: white;
+    transform: scale(1.2);
+}
+.cardapio:active{
+    background-color: rgba(0, 0,0,0);
+    transform: translateY(1px);
+}
+
+.notas{
+    color: grey
+    font-size: 10px;
+    text-align: center;
+}
+
+
+
