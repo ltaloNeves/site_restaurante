@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservas</title>
+    <link rel="stylesheet" href="reservas.css">
+</head>
+<body>
+    <header>
+        <button class="voltar"><ion-icon name="arrow-back-outline"></ion-icon></button>
+        <h1>Reservas</h1>
+        <button class="menu">
+            <ion-icon name="apps-outline"></ion-icon>
+        </button>
+
+    </header>
+
+
+    <main>
+        <form id="reserva" action="" class="reserva">
+
+            <fieldset form = reserva class="formulario">
+                <div class="campo">
+                    <label for="nome" class="name">
+                        Nome <br>
+                        <input type="text" id="nome" class="nome" placeholder="Nome">
+
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label for="lugares">
+                        Numero de lugares <br>
+                        <input class="lugares" type="number" min="1" max="4" id="lugares" placeholder="Numero de Lugares">
+                    </label>
+
+                </div>
+
+                <div class="campo">
+                    <label  for="data">
+                        Data <br>
+                        <input id="data" class="data" type="date" placeholder="Data e Hora">
+
+                    </label>
+                </div>
+                <div class="campo">
+                    <label for="time">
+                        Hora <br>
+                        <input type="time" id="time" class="time">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="email">
+                        Email <br>
+                        <input id="email" type="email" class="email" placeholder="Email de confirmação">
+
+
+                    </label>
+                </div>
+            
+
+                <div class="botao">
+                    <label for="">
+                        <button type="submit" class="reservar">Reservar</button>
+                        <button type="reset" class="cancelar">Cancelar</button>
+                    </label>
+                </div>
+            </fieldset>
+
+        </form>
+        
+
+    </main>
+
+    <footer>
+        <p >Não utilizamos churrasqueiras eletricas</p> <br>
+
+        <p>
+            Contatos: <br>
+            <a href="tapegandofogobicho@gmail.com" target="_blank">tapegandofogobicho@gmail.com</a>
+            <br><a href="tel+5598900000000">telefone</a>
+        </p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
