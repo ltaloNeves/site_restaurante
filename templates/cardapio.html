@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardapio</title>
     <link rel="stylesheet" href="cardapio.css">
+
+
+
+    
 </head>
 <body>
 
@@ -13,22 +17,26 @@
 
         <button class="voltar" ><a href="./index.html" ><ion-icon name="chevron-back"></ion-icon></a></button>
         <h1>Cardapio</h1>
-        <button class="menu"><a href=""></a><ion-icon name="apps"></ion-icon></button>
+        <button class="menu" id="carrinho-lista"><a href=""></a><ion-icon name="apps"></ion-icon></button>
+
 
     </header>
+
+
+
     <main>
         <br>
         <h3>Entrada <br><ion-icon name="restaurant-outline"></ion-icon> <br> </h3>
         <div class="cardapio">
             <img class="photos" src="../photos/alho.png" alt="Carne assada" height="200px" width="270px"> <br>
-            Pão de Alho<br>
+            Pão de Alho <button class="pedido" id="pedido"><ion-icon name="cart-outline"></ion-icon></button><br>
 
         </div>
 
         <h3>Pratos Principais <br><br></h3>
         <div class="cardapio">
             <img class="photos" src="../photos/carne.png" alt="Carne assada" height="200px" width="270px"> <br>
-            Carne Assada<br>
+            Carne Assada <button class="pedido" id="pedido"><ion-icon name="cart-outline"></ion-icon></button><br><br>
 
         </div>
 
@@ -36,7 +44,7 @@
 
         <div class="cardapio">
             <img class="photos" src="../photos/frango.png" alt="Frango assado" height="200px" width="270px"> <br>
-            Frango Assado<br>
+            Frango Assado <button class="pedido" id="pedido"><ion-icon name="cart-outline"></ion-icon></button><br><br>
 
         </div>
             
@@ -44,7 +52,7 @@
 
         <div class="cardapio">
             <img class="photos" src="../photos/porco.png" alt="Carne de Porco Assada" height="200px" width="270px"> <br>
-            Porco Assado<br>
+            Porco Assado <button class="pedido" id="pedido"><ion-icon name="cart-outline"></ion-icon></button><br><br>
 
         </div>
 
@@ -54,23 +62,23 @@
 
         <div class="cardapio">
             <img class="photos" src="../photos/arroz.png" alt="arroz" height="200px" width="270px"> <br>
-            Arroz<br> 
+            Arroz <button class="pedido" id="pedido"><ion-icon name="cart-outline"></ion-icon></button><br><br> 
         </div>
 
         <div class="cardapio">
             <img class="photos" src="../photos/pure.png" alt="pure" height="200px" width="270px">
-            Purê<br>
+            Purê <button class="pedido" id="pedido"><ion-icon name="cart-outline"></ion-icon></button><br><br>
         </div>
 
         <div class="cardapio">
             <img class="photos" src="../photos/vinagrete.png" alt="vinagrete" height="200px" width="270px">
-            Vinagrete</ion-icon><br>
+            Vinagrete <button class="pedido" id="pedido"><ion-icon name="cart-outline"></ion-icon></button><br></ion-icon><br>
         </div>
 
 
         <div class="cardapio">
             <img class="photos" src="../photos/farofa.png" alt="Carne assada" height="200px" width="270px"> <br>
-            Farofa<br>
+            Farofa <button class="pedido" id="pedido"><ion-icon name="cart-outline"></ion-icon></button><br><br>
 
         </div>
 
@@ -101,7 +109,47 @@
                 
             </p>
 
+            <form action="" class="formulario">
+                <fieldset class="formulario2">
+
+                    <div class="dropdown">
+
+                        <input type="text" placeholder="Escolha a opção" onclick="showDropdon()" class="input">
+                        <div class="dropdown-content">
+                            <label for=""><h3>Cervejas</h3></label>
+                            <label for=""><input type="checkbox" name="opcao" value="opcçao" >Heineken</label>
+                            <label for=""><input type="checkbox" name="opcao" value="opcçao" >Stella Artois</label>
+                            <label for=""><input type="checkbox" name="opcao" value="opcçao" >Brahma duplo Malte</label>
+                            <label for=""><input type="checkbox" name="opcao" value="opcçao" >Corona</label>
+                            <label for=""><h3>Sucos</h3></label>
+                            <label for=""><input type="checkbox" name="opcao" value="opcçao" >Maracujá</label>
+                            <label for=""><input type="checkbox" name="opcao" value="opcçao" >Acerola</label>
+                            <label for=""><input type="checkbox" name="opcao" value="opcçao" >Laranja</label>
+                            <label for=""><h3>Sucos</h3></label>
+                            <label for=""><input type="checkbox" name="opcao" value="opcçao" >Guaraná</label>
+                            <label for=""><input type="checkbox" name="opcao" value="opcçao" >Cola-cola</label>
+                            <label for=""><input type="checkbox" name="opcao" value="opcçao" >Fanta</label>
+                            <label for=""><input type="checkbox" name="opcao" value="opcçao" >Pepsi</label>
+
+                        </div>
+
+            
+                    </div>
+
+                    <script>
+                        function showDropdon(){
+                            document.querySelector(".dropdown-content").classList.toggle("show");
+                        }
+                    </script>
+
+                    <button class="pedido" id="pedido" onclick="abrirCaixa()"><ion-icon name="cart-outline"></ion-icon></button><br>
+
         </div>
+
+                </fieldset>
+            </form>
+
+
 
 
 
@@ -119,7 +167,6 @@
         </p>
 
     </footer>
-
 
 
 
